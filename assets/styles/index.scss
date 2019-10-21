@@ -1,1 +1,20 @@
 @import '~bootstrap/scss/bootstrap';
+// body {
+//  background-image: url("https://elements-cover-images-0.imgix.net/80eb878a-f154-42cb-9259-31d264ad0099?auto=compress%2Cformat&fit=max&w=2038&s=1826f6fb50e8dfd69375e3e810c919b8");
+//  // url("https://i.pinimg.com/564x/68/9a/54/689a5435e2c76f00fc5d06ccd79d581d.jpg");
+//  background-repeat: no-repeat;
+//  background-attachment: fixed;
+//  background-position: center;
+// }
+body {
+background-color: black;
+background-image: url(https://7xitg8a4zj-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/iStock-1001607536.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: scroll;
+// background-size: cover;
+// border-top-width: 1px;
+border-right-width: 0;
+// border-bottom-width: 1px;
+// border-left-width: 0;
+}
