@@ -44,7 +44,4 @@ module.exports = {
   onSignUp,
   onChangePassword,
   onSignOut
-  // onClick,
-  // endGame,
-  // onNewGame
 }

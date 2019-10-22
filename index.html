@@ -19,9 +19,8 @@
 
 
 <body>
-  <h1>AutoMainTain</h1>
+ <h1>AutoMainTain</h1>
   <h2 id="message"></h2>
-
   <form id="sign-up">
     <h2>Sign-Up</h2>
     <input type="email" name="credentials[email]" placeholder='Enter email...'>
@@ -46,19 +45,41 @@
     <input type="submit" value="submit">
   </form></center>
 
-  <center><form id="add-car">
+  <form id="add-car">
     <h2>Add Car</h2>
     <input required type="text" name="car[make]" placeholder='Enter make...'>
     <input required type="text" name="car[model]" placeholder="Enter model">
     <input required type="text" name="car[year]" placeholder="Enter year">
     <input required type="text" name="car[vin]" placeholder="Enter vin">
     <input type="submit" value="Add Car">
-  </form></center>
+  </form>
 
 
-  <form id='sign-out'>
+  <!-- <form id='sign-out'>
     <h2>Sign-out</h2>
     <input type="submit" value="sign-out">
   </form>
-</body>
+</body> -->
+
+<button id="carHTML">View Car</button>
+<table>
+  <tr>
+    <th id="carTable">Your Cars</th>
+    </tr>
+<td><form id="deleteRow">
+    <input required type="text" name="car[id]" placeholder='Enter ID...'>
+      <button type="submit">Delete Car</button>
+    </form>
+<td><form id="changeVin">
+    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID...'>
+    <input required id="carVin" type="integer" name="car[vin]" placeholder='Enter vin...'>
+    <button type="submit">Change Vin</button>
+    </form>
+</table>
+
+<form id='sign-out'>
+  <!-- <h2>Sign-out</h2> -->
+  <input type="submit" value="sign-out">
+</form>
+  <!-- <button>View Cars</button> -->
 <!-- https://i.pinimg.com/564x/68/9a/54/689a5435e2c76f00fc5d06ccd79d581d.jpg -->

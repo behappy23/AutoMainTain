@@ -32,7 +32,15 @@ const onSignInSuccess = function (response) {
   $('#add-car').show()
   $('#sign-up').hide()
   $('#sign-in').hide()
+  $('#carHTML').show()
+  $('#carTable').show()
+  $('#deleteVehicle').show()
+  $('#deleteRow').show()
 }
+
+// const example = `<h1>${myObject.fish}</h1>`
+// $('.targeted-class').html(example)
+
 const onSignInFailure = function () {
   failureMessage('Sign in failed')
   console.log('Sign-In Failed')
@@ -44,6 +52,13 @@ const onSignOutSuccess = function () {
   $('#sign-out').hide()
   $('#sign-up').show()
   $('#sign-in').show()
+  $('#view-car').hide()
+  $('#add-car').hide()
+  // $('#view-car_table').hide()
+  $('#carHTML').hide()
+  $('#carTable').hide()
+  $('#deleteVehicle').hide()
+  $('#deleteRow').hide()
 }
 const onSignOutFailure = function () {
   failureMessage('Sign Out failed')

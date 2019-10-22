@@ -16,16 +16,21 @@ $(() => {
   $('#change-password').hide()
   $('#add-car').hide()
   $('#sign-out').hide()
-  // $('.container').hide()
-  // $('#new-game').hide()
+  $('#view-car').hide()
+  $('#carHTML').hide()
+  $('#carTable').hide()
+  $('#view-car_table').hide()
   // set click events for page
-  $('#add-car').on('submit', carEvents.addCar)
+  $('#add-car').on('submit', carEvents.onAddCar)
+  $('#carHTML').on('click', carEvents.onViewCar)
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
+  $('#changeVin').on('submit', carEvents.onChangeVin)
   $('#change-password').on('submit', authEvents.onChangePassword)
+  $('#deleteRow').on('submit', carEvents.onDeleteVehicle)
   $('#sign-out').on('submit', authEvents.onSignOut)
-  // $('.game').on('click', authEvents.onClick)
-  // $('#new-game').on('submit', authEvents.onNewGame)
+  $('#cars-display').html('')
+  $('#signout').hide()
 
   // ('#create-example') selects the create-example form on the page
   // the rest says: I want to listen for the submit event
