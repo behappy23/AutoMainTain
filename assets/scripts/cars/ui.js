@@ -16,6 +16,12 @@ const onAddCarSuccess = function () {
   console.log('Car Added Successfully')
   $('.cars').text('')
 }
+const onAddCarFailure = function () {
+  failureMessage('Car failed to add')
+  console.log('Car failed')
+  // $('.cars').text('')
+}
+
 const onChangeVinSuccess = function () {
   successMessage('Changed Vin successfully!')
   console.log('Vin Changed Successfully')
@@ -50,6 +56,11 @@ const onDeleteCarSuccess = function () {
   console.log('Car Added Successfully')
   $('.cars').text('')
 }
+const onDeleteVehicleFailure = function () {
+  failureMessage('Please Enter a Valid Car ID')
+  console.log('Car failed delete')
+  $('.cars').text('')
+}
 
 module.exports = {
   onAddCarSuccess,
@@ -57,5 +68,7 @@ module.exports = {
   successMessage,
   onViewCarSuccess,
   onDeleteCarSuccess,
-  onChangeVinSuccess
+  onChangeVinSuccess,
+  onAddCarFailure,
+  onDeleteVehicleFailure
 }

@@ -36,6 +36,7 @@ const onSignInSuccess = function (response) {
   $('#carTable').show()
   $('#deleteVehicle').show()
   $('#deleteRow').show()
+  $('#changeVin').hide()
 }
 
 // const example = `<h1>${myObject.fish}</h1>`
@@ -59,6 +60,7 @@ const onSignOutSuccess = function () {
   $('#carTable').hide()
   $('#deleteVehicle').hide()
   $('#deleteRow').hide()
+  $('#changeVin').hide()
 }
 const onSignOutFailure = function () {
   failureMessage('Sign Out failed')

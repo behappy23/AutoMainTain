@@ -20,6 +20,9 @@ $(() => {
   $('#carHTML').hide()
   $('#carTable').hide()
   $('#view-car_table').hide()
+  $('#changeVin').hide()
+  $('#deleteRow').hide()
+
   // set click events for page
   $('#add-car').on('submit', carEvents.onAddCar)
   $('#carHTML').on('click', carEvents.onViewCar)
