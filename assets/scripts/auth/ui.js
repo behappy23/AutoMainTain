@@ -27,6 +27,7 @@ const onSignInSuccess = function (response) {
   successMessage('Signed in successfully!')
   store.user = response.user
   console.log('Signed-In Successfully')
+  $('#sign-in').trigger('reset')
   $('#change-password').show()
   $('#sign-out').show()
   $('#add-car').show()
@@ -36,7 +37,7 @@ const onSignInSuccess = function (response) {
   $('#carTable').show()
   $('#deleteVehicle').show()
   $('#deleteRow').show()
-  $('#changeVin').hide()
+  $('#changeVin').show()
 }
 
 // const example = `<h1>${myObject.fish}</h1>`
@@ -69,6 +70,7 @@ const onSignOutFailure = function () {
 const onChangePasswordSuccess = function () {
   successMessage('Changed Password successfully!')
   console.log('Password Changed Successfully')
+  $('#change-password').trigger('reset')
 }
 const onChangePasswordFailure = function () {
   failureMessage('Change Password failed')

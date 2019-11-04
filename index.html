@@ -36,8 +36,6 @@
     <input type="submit" value="submit">
   </form>
 
-
-
   <form id="change-password">
     <h2>Change Password</h2>
     <input type="password" name="passwords[old]" placeholder="Enter old password">
@@ -54,13 +52,6 @@
     <input type="submit" value="Add Car">
   </form>
 
-
-  <!-- <form id='sign-out'>
-    <h2>Sign-out</h2>
-    <input type="submit" value="sign-out">
-  </form>
-</body> -->
-
 <button id="carHTML">View Car</button>
 <table>
   <tr>
@@ -74,9 +65,14 @@
     </form>
 <!-- <td> -->
   <form id="changeVin">
-    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID...'>
-    <input required id="carVin" type="integer" name="car[vin]" placeholder='Enter vin...'>
-    <button type="submit">Change Vin</button>
+    <!-- <input type="carID" name="car[id]" placeholder='Enter Car ID...'>
+    <input type="carVin" name="car[vin]" placeholder="Enter VIN"> -->
+
+    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID'>
+    <input required id="carVin" type="integer" name="car[vin]" placeholder='Enter Vin to Change'>
+    <!-- <button type="submit">Change Vin</button> -->
+    <input type="submit" value="submit">
+
     </form>
 </table>
 

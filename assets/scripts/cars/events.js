@@ -5,8 +5,8 @@ const ui = require('./ui')
 
 const onAddCar = function (event) {
   event.preventDefault()
-  console.log('events working')
-  console.log(event)
+  // console.log('events working')
+  // console.log(event)
   const form = event.target
   const formData = getFormfields(form)
   api.addCar(formData)
@@ -16,8 +16,8 @@ const onAddCar = function (event) {
 // const onViewCar = function () {
 const onViewCar = function (event) {
   event.preventDefault()
-  console.log('events working')
-  console.log(event)
+  // console.log('events working')
+  // console.log(event)
   api.viewCar(event)
     .then(ui.onViewCarSuccess)
     .catch(ui.onViewCarFailure)
@@ -32,17 +32,17 @@ const onDeleteVehicle = function (event) {
   const form = event.target
   const formData = getFormfields(form)
   api.deleteVehicle(formData)
-    .then(ui.onDeleteVehicleSuccess)
-    .catch(ui.onDeleteVehicleFailure)
+    .then(ui.onDeleteCarSuccess)
+    .catch(ui.onDeleteCarFailure)
 }
 const onChangeVin = function (event) {
-  console.log('Vin working')
+  // console.log('Vin working')
   event.preventDefault()
-  console.log('Vin workingsss')
+  // console.log('Vin workingsss')
   // const form = event.target
   // const formData = getFormfields(form)
   const id = $('#carID').val()
-  console.log(id)
+  // console.log(id)
   const vin = $('#carVin').val()
   api.changeVin(id, vin)
     .then(ui.onChangeVinSuccess)
