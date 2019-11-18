@@ -41,7 +41,7 @@
     <input type="password" name="passwords[old]" placeholder="Enter old password">
     <input type="password" name="passwords[new]">
     <input type="submit" value="submit">
-  </form></center>
+  </form>
 
   <form id="add-car">
     <h2>Add Car</h2>
@@ -58,7 +58,7 @@
     <th id="carTable">Your Cars</th>
     </tr>
 <td>
-
+</table>
   <form id="deleteRow">
     <input required type="text" name="car[id]" placeholder='Delete ID...'>
     <button type="submit">Delete Car</button>
@@ -68,16 +68,38 @@
     <!-- <input type="carID" name="car[id]" placeholder='Enter Car ID...'>
     <input type="carVin" name="car[vin]" placeholder="Enter VIN"> -->
 
-    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID'>
+    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID '>
     <input required id="carVin" type="integer" name="car[vin]" placeholder='Enter Vin to Change'>
     <!-- <button type="submit">Change Vin</button> -->
     <input type="submit" value="submit">
+  </form>
 
+    <!-- ADD PART -->
+    <form id="add-part">
+      <h2>Add Part</h2>
+      <input required type="text" name="part[Type]" placeholder='Enter type...'>
+      <input required type="text" name="car[PartNumber]" placeholder="Enter Part Number">
+      <input type="submit" value="Add Part">
     </form>
+
+    <button id="partHTML">View Part</button>
+    <table>
+      <tr>
+        <th id="partTable">Your Parts</th>
+        </tr>
+    <td>
+    <form id="deleteRowPart">
+    <input required type="text" name="part[id]" placeholder='Delete ID...'>
+    <button type="submit">Delete Part</button>
+    </form>
+    <form id="changePart">
+    <input required id="partID" type="string" name="part[id]" placeholder='Enter ID '>
+    <input required id="PartNumber" type="string" name="part[PartNumber]" placeholder='Enter PartNumber'>
+    <input type="submit" value="submit">
+  </form>
 </table>
 
 <form id='sign-out'>
-  <!-- <h2>Sign-out</h2> -->
   <input type="submit" value="sign-out">
 </form>
   <!-- <button>View Cars</button> -->

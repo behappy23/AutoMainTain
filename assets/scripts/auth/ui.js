@@ -38,6 +38,11 @@ const onSignInSuccess = function (response) {
   $('#deleteVehicle').show()
   $('#deleteRow').show()
   $('#changeVin').show()
+  $('#deleteRowPart').show()
+  $('#add-part').show()
+  $('#partHTML').show()
+  $('#changePart').show()
+  $('#partTable').show()
 }
 
 // const example = `<h1>${myObject.fish}</h1>`
@@ -62,6 +67,13 @@ const onSignOutSuccess = function () {
   $('#deleteVehicle').hide()
   $('#deleteRow').hide()
   $('#changeVin').hide()
+  $('#deleteRow').show()
+  $('#changeVin').hide()
+  $('#deleteRowPart').hide()
+  $('#add-part').hide()
+  $('#partHTML').hide()
+  $('#changePart').hide()
+  $('#partTable').hide()
 }
 const onSignOutFailure = function () {
   failureMessage('Sign Out failed')
