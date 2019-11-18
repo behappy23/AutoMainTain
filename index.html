@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <!-- <body>
+      <h1>Browser Template</h1>
+    </body>
+</html>
+</head> -->
+
+
+<body>
+ <h1>AutoMainTain</h1>
+  <h2 id="message"></h2>
+  <form id="sign-up">
+    <h2>Sign-Up</h2>
+    <input type="email" name="credentials[email]" placeholder='Enter email...'>
+    <input type="password" name="credentials[password]" placeholder="Enter password">
+    <input type="password" name="credentials[password_confirmation]" placeholder="Enter password again">
+    <input type="submit" value="submit">
+  </form>
+
+  <form id="sign-in">
+    <h2>Sign-in</h2>
+    <input type="email" name="credentials[email]" placeholder='Enter email...'>
+    <input type="password" name="credentials[password]" placeholder="Enter password">
+    <input type="submit" value="submit">
+  </form>
+
+  <form id="change-password">
+    <h2>Change Password</h2>
+    <input type="password" name="passwords[old]" placeholder="Enter old password">
+    <input type="password" name="passwords[new]">
+    <input type="submit" value="submit">
+  </form>
+
+  <form id="add-car">
+    <h2>Add Car</h2>
+    <input required type="text" name="car[make]" placeholder='Enter make...'>
+    <input required type="text" name="car[model]" placeholder="Enter model">
+    <input required type="text" name="car[year]" placeholder="Enter year">
+    <input required type="text" name="car[vin]" placeholder="Enter vin">
+    <input type="submit" value="Add Car">
+  </form>
+
+<button id="carHTML">View Car</button>
+<table>
+  <tr>
+    <th id="carTable">Your Cars</th>
+    </tr>
+<td>
+</table>
+  <form id="deleteRow">
+    <input required type="text" name="car[id]" placeholder='Delete ID...'>
+    <button type="submit">Delete Car</button>
+    </form>
+<!-- <td> -->
+  <form id="changeVin">
+    <!-- <input type="carID" name="car[id]" placeholder='Enter Car ID...'>
+    <input type="carVin" name="car[vin]" placeholder="Enter VIN"> -->
+
+    <input required id="carID" type="integer" name="car[id]" placeholder='Enter ID '>
+    <input required id="carVin" type="integer" name="car[vin]" placeholder='Enter Vin to Change'>
+    <!-- <button type="submit">Change Vin</button> -->
+    <input type="submit" value="submit">
+  </form>
+
+    <!-- ADD PART -->
+    <form id="add-part">
+      <h2>Add Part</h2>
+      <input required type="text" name="part[Type]" placeholder='Enter type...'>
+      <input required type="text" name="car[PartNumber]" placeholder="Enter Part Number">
+      <input type="submit" value="Add Part">
+    </form>
+
+    <button id="partHTML">View Part</button>
+    <table>
+      <tr>
+        <th id="partTable">Your Parts</th>
+        </tr>
+    <td>
+    <form id="deleteRowPart">
+    <input required type="text" name="part[id]" placeholder='Delete ID...'>
+    <button type="submit">Delete Part</button>
+    </form>
+    <form id="changePart">
+    <input required id="partID" type="string" name="part[id]" placeholder='Enter ID '>
+    <input required id="PartNumber" type="string" name="part[PartNumber]" placeholder='Enter PartNumber'>
+    <input type="submit" value="submit">
+  </form>
+</table>
+
+<form id='sign-out'>
+  <input type="submit" value="sign-out">
+</form>
+  <!-- <button>View Cars</button> -->
+<!-- https://i.pinimg.com/564x/68/9a/54/689a5435e2c76f00fc5d06ccd79d581d.jpg -->
