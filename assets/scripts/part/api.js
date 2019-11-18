@@ -6,8 +6,8 @@ const config = require('../config')
 const store = require('../store')
 //
 
-// const addpart = function (make, model, year, vin) {
-const addpart = function (formData) {
+// const addpart = function (Type, PartNumber) {
+const addPart = function (formData) {
   console.log(formData.part.Type)
   return $.ajax({
     method: 'POST',
@@ -21,7 +21,7 @@ const addpart = function (formData) {
   })
 }
 
-const viewpart = function () {
+const viewPart = function () {
   return $.ajax({
     method: 'GET',
     // url: config.apiUrl + `/parts/${store.parts.id}`,
@@ -56,8 +56,8 @@ const deletePart = function (formData) {
   })
 }
 module.exports = {
-  addpart,
-  viewpart,
+  addPart,
+  viewPart,
   deletePart,
   changePart
 }

@@ -3,24 +3,24 @@ const getFormfields = require('../../../lib/get-form-fields.js')
 const api = require('./api')
 const ui = require('./ui')
 
-const onAddpart = function (event) {
+const onAddPart = function (event) {
   event.preventDefault()
   // console.log('events working')
   // console.log(event)
   const form = event.target
   const formData = getFormfields(form)
-  api.addpart(formData)
-    .then(ui.onAddpartSuccess)
-    .catch(ui.onAddpartFailure)
+  api.addPart(formData)
+    .then(ui.onAddPartSuccess)
+    .catch(ui.onAddPartFailure)
 }
 // const onViewpart = function () {
-const onViewpart = function (event) {
+const onViewPart = function (event) {
   event.preventDefault()
   // console.log('events working')
   // console.log(event)
-  api.viewpart(event)
-    .then(ui.onViewpartSuccess)
-    .catch(ui.onViewpartFailure)
+  api.viewPart(event)
+    .then(ui.onViewPartSuccess)
+    .catch(ui.onViewPartFailure)
 }
 const onParts = function (responseData) {
   // log the information we get back from the API so we know how we can
@@ -31,7 +31,7 @@ const onDeletePart = function (event) {
   event.preventDefault()
   const form = event.target
   const formData = getFormfields(form)
-  api.deleteVehicle(formData)
+  api.deletePart(formData)
     .then(ui.onDeletePartSuccess)
     .catch(ui.onDeletePartFailure)
 }
@@ -44,13 +44,13 @@ const onChangePart = function (event) {
   const id = $('#partID').val()
   // console.log(id)
   const type = $('#partType').val()
-  api.changeVin(id, type)
-    .then(ui.onChangeVinSuccess)
-    .catch(ui.onChangeVinFailure)
+  api.changePart(id, type)
+    .then(ui.onChangePartSuccess)
+    .catch(ui.onChangePartFailure)
 }
 module.exports = {
-  onAddpart,
-  onViewpart,
+  onAddPart,
+  onViewPart,
   onParts,
   onDeletePart,
   onChangePart

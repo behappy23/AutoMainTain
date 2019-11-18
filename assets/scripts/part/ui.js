@@ -11,13 +11,13 @@ const failureMessage = function (newText) {
   $('#message').removeClass('success')
   $('#message').addClass('failure')
 }
-const onAddpartSuccess = function () {
+const onAddPartSuccess = function () {
   successMessage('part Added Successfully')
   // console.log('part Added Successfully')
   $('.parts').text('')
   $('#add-part').trigger('reset')
 }
-const onAddpartFailure = function () {
+const onAddPartFailure = function () {
   failureMessage('part failed to add')
   console.log('part failed')
   // $('.parts').text('')
@@ -43,8 +43,8 @@ const onViewPartSuccess = function (responseData) {
     const partHTML = (`
     <tr>
       <th>Id: ${part.id}</th>
-      <th>Type: ${part.type}</th>
-      <th>PartNumber: ${part.partnumber}</th>
+      <th>Type: ${part.Type}</th>
+      <th>PartNumber: ${part.PartNumber}</th>
     </tr>
    `)
 
@@ -67,12 +67,12 @@ const onDeletePartFailure = function () {
 }
 
 module.exports = {
-  onAddpartSuccess,
+  onAddPartSuccess,
   failureMessage,
   successMessage,
   onViewPartSuccess,
   onDeletePartSuccess,
   onChangePartSuccess,
-  onAddpartFailure,
+  onAddPartFailure,
   onDeletePartFailure
 }
